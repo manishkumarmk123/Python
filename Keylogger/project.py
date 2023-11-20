@@ -1,3 +1,5 @@
+#pip install keyboard
+
 import keyboard as kb
 from threading import Thread
 SHOULD_RECORD = True
