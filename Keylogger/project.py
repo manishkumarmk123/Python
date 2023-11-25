@@ -5,7 +5,7 @@ from threading import Thread
 SHOULD_RECORD = True
 def start_rec():
     while SHOULD_RECORD:
-        rec = kb.record(until="escape")
+        rec = kb.record(until="escape+ctrl+shift")
         seq = kb.get_typed_strings(rec)
         with open("records.txt", "a") as f:
             f.write("".join(seq) + "\n")
